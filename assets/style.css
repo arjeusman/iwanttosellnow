@@ -151,12 +151,31 @@ main .hero {
 }
 
 .offer-form {
+	position: relative;
+}
+
+.indented {
 	top: -30%;
 	position: relative;
 }
 
-.offer-form .heading{
+.offer-form .heading {
 	background: #ffd014;
+}
+
+.offer-form .body {
+	position: relative;
+}
+
+.offer-form .body::after {
+	top: 0px;
+	left: calc(50% - 20px);
+	position: absolute;
+	content: "";
+	display: inline-block;
+	border-width: 20px;
+	border-style: solid;
+	border-color: #ffd014 transparent transparent transparent;
 }
 
 .offer-form .btn {
@@ -164,4 +183,17 @@ main .hero {
 	padding: 10px 20px;
 	background: #0051a3;
 	border: none;
+}
+
+.review {
+	background: linear-gradient(to bottom, #fff, #ccc);
+}
+
+.review p {
+	text-align: center;
+}
+
+.review img {
+	width: 80px;
+	height: 80px;
 }
