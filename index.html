@@ -150,6 +150,9 @@
                             <script type="text/javascript">
                                 let index = 0
                                 function next(i){
+                                    let quickTabs = document.querySelectorAll('#quickTabs .item')
+                                    let indicator = document.querySelector('#indicator .progressBar')
+                                    let progress = [25, 50, 75, 100]
                                     if(i!=null){
                                         index = i
                                     } else {
@@ -157,11 +160,9 @@
                                             ++index
                                         } else {
                                             index = 0
+                                            indicator.style.width = `${progress[index]}%`
                                         }
                                     }
-                                    let quickTabs = document.querySelectorAll('#quickTabs .item')
-                                    let indicator = document.querySelector('#indicator .progressBar')
-                                    let progress = [25, 50, 75, 100]
                                     quickTabs.forEach((item, x) => {
                                         if(x == index){
                                             item.classList.add('active')
