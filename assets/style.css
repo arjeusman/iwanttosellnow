@@ -185,6 +185,82 @@ main .hero {
 	border: none;
 }
 
+.quick-form {
+	user-select: none;
+}
+
+.quick-form .item {
+	cursor: pointer;
+	width: 25%;
+}
+
+.quick-form .item .number {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #444;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 100%;
+	background: #ccc;
+	font-weight: 800;
+}
+
+.quick-form .item.active .number {
+	color: #fff;
+	background: #0051a3;
+}
+
+.quick-form .item .text {
+	color: #bbb;
+}
+
+.quick-form .item.active .text {
+	color: #0051a3;
+}
+
+.quick-form .indicator {
+	height: 5px;
+	background: #eaeaea;
+	position: relative;
+}
+
+.quick-form .indicator .progressBar {
+	top: 0px;
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	background: #ffd014;
+	position: absolute;
+	transition: all linear .3s;
+}
+
+.quick-form .icon {
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
+	line-height: 40px;
+	color: black;
+	text-align: center;
+	border-radius: 100%;
+	background: #ffb433;
+	font-weight: 800;
+}
+
+.quick-form .btn {
+	color: #fff;
+	background: #0051a3;
+}
+
+.quick-form .form-control {
+	color: #444;
+	font-weight: 800;
+}
+
+.quick-form .form-control::placeholder {
+	color: #ccc;
+}
+
 .review {
 	background: linear-gradient(to bottom, #fff, #ccc);
 }

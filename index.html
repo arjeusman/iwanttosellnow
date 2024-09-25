@@ -104,9 +104,74 @@
                     <div class="col-sm-12 col-md-6 col-lg-8 py-4">
                         <h1 class="fs-1">I Need to Sell My House, and Fast!</h1>
                         <p style="font-size: 16px;">If you’ve reached this page, it is likely that this thought has crossed your mind. Maybe you’re <u>about to lose your house</u> because you’ve lost your job or your mortgage payment is higher than what you can afford. Maybe you purchased a property at the peak of the market, and now your house is worth less than the amount you owe. It might also be that you inherited a home which you’ve been unable to sell because it is in such bad disrepair. Maybe you’ve tried to sell but your real estate agent hasn’t been of much help and you are left wondering if there is someone out there who will buy your house fast.</p>
-                        <h1 class="text-center" style="font-size: 80px">We Buy Houses Nationwide</h1>
+                        <h1 class="text-center fw-bolder" style="font-size: 80px">We Buy Houses Nationwide</h1>
                         <div class="d-flex align-items-center justify-content-center">
                             <img style="max-width: 100%;" class="col-sm-12 col-lg-10" src="assets/united-states-map.png">
+                        </div>
+                        <div class="quick-form border px-4 py-2 my-3">
+                            <div id="quickTabs" class="d-flex align-items-center justify-content-center gap-2 py-2">
+                                <div onclick="next(0)" class="item active d-flex align-items-center gap-2">
+                                    <span class="number">1</span>
+                                    <span class="text text-uppercase fw-bolder">Zip Code</span>
+                                </div>
+                                <div onclick="next(1)" class="item d-flex align-items-center gap-2">
+                                    <span class="number">2</span>
+                                    <span class="text text-uppercase fw-bolder">Address</span>
+                                </div>
+                                <div onclick="next(2)" class="item d-flex align-items-center gap-2">
+                                    <span class="number">3</span>
+                                    <span class="text text-uppercase fw-bolder">Contact Info</span>
+                                </div>
+                                <div onclick="next(3)" class="item d-flex align-items-center gap-2">
+                                    <span class="number">4</span>
+                                    <span class="text text-uppercase fw-bolder">Offer</span>
+                                </div>
+                            </div>
+                            <div id="indicator" class="indicator my-1">
+                                <div class="progressBar"></div>
+                            </div>
+                            <div class="body py-3">
+                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                    <span class="icon">$</span>
+                                    <span class="fs-3 fw-bolder text-black">Get a cash offer for your house</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-center justify-content-center my-3">
+                                    <div class="col-sm-12 col-md-8 col-lg-6">
+                                        <form class="d-flex gap-4">
+                                            <input class="form-control form-control-lg rounded-0" placeholder="Enter Zip Code" />
+                                            <button onclick="next()" type="button" class="btn btn-lg rounded-0 fw-bolder text-uppercase">Next</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-12 col-md-10 col-lg-8 text-center text-muted mt-4">
+                                        <small>By submitting your information, you consent to being contacted through various methods, including but not limited to phone, text message, and email.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                let index = 0
+                                function next(i){
+                                    if(i!=null){
+                                        index = i
+                                    } else {
+                                        if(index < 3){
+                                            ++index
+                                        } else {
+                                            index = 0
+                                        }
+                                    }
+                                    let quickTabs = document.querySelectorAll('#quickTabs .item')
+                                    let indicator = document.querySelector('#indicator .progressBar')
+                                    let progress = [25, 50, 75, 100]
+                                    quickTabs.forEach((item, x) => {
+                                        if(x == index){
+                                            item.classList.add('active')
+                                        } else {
+                                            item.classList.remove('active')
+                                        }
+                                        indicator.style.width = `${progress[index]}%`
+                                    })
+                                }
+                            </script>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
