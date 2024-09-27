@@ -356,3 +356,7 @@ footer {}
     background-color: #ffd013;
     color: #000;
 }
+
+.footer-info {
+    font-size: 12px;
+}
