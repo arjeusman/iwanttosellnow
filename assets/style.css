@@ -2,59 +2,75 @@
 
 /* latin-ext */
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwaPGR_p.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .btn:hover,
 .btn:focus,
 .form-control:focus {
-	outline: none !important;
-	box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /*custom style*/
 
 
 body {
-	font-size: 14px;
-	font-family: Lato;
+    font-size: 14px;
+    font: 400 18px/1 'Lato', Helvetica, Arial, sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+main p {
+    line-height: 32px;
 }
 
 /*navbar*/
 
 .header {
-	margin: 0px;
-	padding: 0px;
-	background: #252525;
-	user-select: none;
+    margin: 0px;
+    padding: 0px;
+    background: #252525;
+    user-select: none;
 }
 
 .header .top {
@@ -62,214 +78,281 @@ body {
 }
 
 .header .top .logo {
-	width: auto;
-	max-height: 80px;
+    width: auto;
+    max-height: 80px;
 }
 
 .header .top .top-button {
-	border-radius: 0px;
-	padding: 10px 20px;
-	background: #0051a3;
-	border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    background: #0051a3;
+    border: none;
 }
 
 .header .navbar {
-	background: #1c1c1c;
+    background: #1c1c1c;
 }
 
 .navbar-nav .nav-item {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .navbar-nav .nav-item .nav-link {
-	line-height: unset;
-	height: unset;
-	padding: 0px 20px;
-	margin: 0px;
-	font-size: 15px;
-	transition: all ease .3s;
+    line-height: unset;
+    height: unset;
+    padding: 0px 20px;
+    margin: 0px;
+    font-size: 15px;
+    transition: all ease .3s;
 }
 
 .navbar-nav .nav-item .nav-link.active {
-	background: #0051a3;
+    background: #0051a3;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-	color: #000;
-	background: #ffd014;
+    color: #000;
+    background: #ffd014;
 }
 
 /*content*/
 
 main .hero {
-	margin: 0px;
-	background: #252525;
+    margin: 0px;
+    background: #252525;
 }
 
 .hero .title {
-	font-weight: bold;
-	font-size: 45px;
-	color: #ffd014;
+    font-weight: bold;
+    font-size: 45px;
+    color: #ffd014;
 }
 
 .hero .sub-item {
-	cursor: pointer;
-	max-width: 200px;
-	height: 150px;
-	position: relative;
-	text-align: center;
-	border-left: 1px solid #555;
-	padding: 0px 10px;
+    cursor: pointer;
+    max-width: 200px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    border-left: 1px solid #555;
+    padding: 0px 10px;
 }
 
 .hero .sub-item:hover .icon {
-	top: -50%;
+    top: -50%;
 }
 
 .hero .sub-item:last-child {
-	border-right: 1px solid #555;
+    border-right: 1px solid #555;
 }
 
 .hero .sub-item * {
-	color: #000;
+    color: #000;
 }
 
 .hero .sub-item .icon {
-	top: -40%;
-	width: 80px;
-	height: 80px;
-	font-size: 40px;
-	position: absolute;
-	background: #0051a4;
-	border-radius: 100%;
-	transition: all linear .3s;
+    top: -40%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    position: absolute;
+    background: #0051a4;
+    border-radius: 100%;
+    transition: all linear .3s;
 }
 
 .hero .sub-item .icon * {
-	color: #fff;
+    color: #fff;
 }
 
 .offer-form {
-	position: relative;
+    position: relative;
 }
 
 .indented {
-	top: -300px;
-	position: relative;
+    top: -300px;
+    position: relative;
 }
 
 .offer-form .heading {
-	background: #ffd014;
+    background: #ffd014;
 }
 
 .offer-form .body {
-	position: relative;
+    position: relative;
 }
 
 .offer-form .body::after {
-	top: 0px;
-	left: calc(50% - 20px);
-	position: absolute;
-	content: "";
-	display: inline-block;
-	border-width: 20px;
-	border-style: solid;
-	border-color: #ffd014 transparent transparent transparent;
+    top: 0px;
+    left: calc(50% - 20px);
+    position: absolute;
+    content: "";
+    display: inline-block;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #ffd014 transparent transparent transparent;
 }
 
 .offer-form .btn {
-	border-radius: 0px;
-	padding: 10px 20px;
-	background: #0051a3;
-	border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    background: #0051a3;
+    border: none;
 }
 
 .quick-form {
-	user-select: none;
+    user-select: none;
 }
 
 .quick-form .item {
-	cursor: pointer;
-	width: 25%;
+    cursor: pointer;
+    width: 25%;
 }
 
 .quick-form .item .number {
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	color: #444;
-	font-size: 16px;
-	text-align: center;
-	border-radius: 100%;
-	background: #ccc;
-	font-weight: 800;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #444;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 100%;
+    background: #ccc;
+    font-weight: 800;
 }
 
 .quick-form .item.active .number {
-	color: #fff;
-	background: #0051a3;
+    color: #fff;
+    background: #0051a3;
 }
 
 .quick-form .item .text {
-	color: #bbb;
+    color: #bbb;
 }
 
 .quick-form .item.active .text {
-	color: #0051a3;
+    color: #0051a3;
 }
 
 .quick-form .indicator {
-	height: 5px;
-	background: #eaeaea;
-	position: relative;
+    height: 5px;
+    background: #eaeaea;
+    position: relative;
 }
 
 .quick-form .indicator .progressBar {
-	top: 0px;
-	width: 25%;
-	height: 100%;
-	display: inline-block;
-	background: #ffd014;
-	position: absolute;
-	transition: all linear .3s;
+    top: 0px;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    background: #ffd014;
+    position: absolute;
+    transition: all linear .3s;
 }
 
 .quick-form .icon {
-	width: 40px;
-	height: 40px;
-	font-size: 25px;
-	line-height: 40px;
-	color: black;
-	text-align: center;
-	border-radius: 100%;
-	background: #ffb433;
-	font-weight: 800;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    border-radius: 100%;
+    background: #ffb433;
+    font-weight: 800;
 }
 
 .quick-form .btn {
-	color: #fff;
-	background: #0051a3;
+    color: #fff;
+    background: #0051a3;
 }
 
 .quick-form .form-control {
-	color: #444;
-	font-weight: 800;
+    color: #444;
+    font-weight: 800;
 }
 
 .quick-form .form-control::placeholder {
-	color: #ccc;
+    color: #ccc;
 }
 
 .review {
-	background: linear-gradient(to bottom, #fff, #ccc);
+    background: linear-gradient(to bottom, #fff, #ccc);
 }
 
 .review p {
-	text-align: center;
+    text-align: center;
 }
 
 .review img {
-	width: 80px;
-	height: 80px;
+    width: 80px;
+    height: 80px;
+}
+
+blockqoute {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+
+}
+
+.bqleft {
+    float: left;
+    margin: 0 5px 5px -100px;
+    width: 250px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 900;
+    line-height: 30px;
+    padding: 15px 30px;
+    position: relative;
+    font-size: 20px;
+}
+
+.bqleft::before,
+.bqleft::after {
+    color: #c9c9c9;
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    position: absolute;
+}
+
+.bqleft::before {
+    content: "“";
+    left: 2px;
+    top: 0.05em;
+}
+
+.bqleft::after {
+    bottom: -0.5em;
+    content: "”";
+    right: 10px;
+}
+
+.sidestory {
+    display: block;
+    border: 1px solid #000;
+    background-image: url(investor-sharks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidestory * {
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
+}
+
+footer {}
+
+.footer-cta {
+    background-color: #ffd013;
+    color: #000;
 }
